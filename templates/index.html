@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> NM23 Project </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='app-base.css') }}">
+    </head>
+    <body>
+        <div class="container-fluid full-width-container">
+                <div id="goodNewsCarousel" class="carousel slide" data-ride="carousel">
+                       
+                        <div class="carousel-inner">
+                          {% for article in articles %}
+                          {% if loop.first %}
+                            <div class="carousel-item active">
+                          {% else %}
+                             <div class="carousel-item">
+                          {% endif %}
+                            <img class="d-block w-100" src="{{ article.img }}">
+                            <div class="carousel-caption d-none d-md-block">
+                                    <a href="{{ article.link }}"><h5> {{ article.title }}</h5> </a>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                        <a class="carousel-control-prev" href="#goodNewsCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#goodNewsCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+        </div>
+
+    </body>
+    <script src="{{ url_for('static', filename='jquery-3.3.1.slim.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}" type="text/javascript"></script>
+</html>
