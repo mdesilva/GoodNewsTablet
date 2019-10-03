@@ -9,7 +9,7 @@ def parseArticles():
     soup = BeautifulSoup(data.text, features="lxml")
     articles = []
     rawArticles = soup.find_all(attrs={"class": "td-module-thumb"})
-    for article in range(0,9):
+    for article in range(0,4):
         articleHtml = rawArticles[article].find("a")
         title = articleHtml['title']
         link = articleHtml['href']

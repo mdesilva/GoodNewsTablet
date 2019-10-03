@@ -8,53 +8,47 @@
         opacity: 0;
     }
 
+    25% {
+        opacity: 0.4;
+    }
+
     50% {
-        opacity: 0.5;
+        opacity: 0.6;
     }
     75% {
+        opacity: 1
+    }
+
+    80% {
         opacity: 0.75
     }
 
     90% {
-        opacity: 1
+        opacity: 0.5
+    }
+    95% {
+        opacity: 0.25
     }
 
     100% {
         opacity: 0
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 0
-    }
-
-    75% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
     }
 }
 
 
 .welcome-text{
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 50%;
     opacity: 0;
     color: white;
     font-size: 36px;
-    background-color: rgba(0, 0, 0, 0.45)   ;
+    background-color: rgba(12, 166, 181, 0.7); 
     padding: 1.5rem 1rem;
     border-radius: 10px;
     animation-name: fadeOut;
-    animation-duration: 3s;
+    animation-duration: 6s;
+    font-family: 'Kreon', sans-serif;
 }
 
 #goodNewsCarousel {
@@ -69,7 +63,8 @@
     position: absolute;
     top: 10%;
     left: 5%;
-    color: white; 
+    color: blue; 
+    font-family: 'Righteous', cursive;
 }
 
 .custom-carousel-caption {
