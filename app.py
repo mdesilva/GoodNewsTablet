@@ -13,7 +13,7 @@ def parseArticles():
         articleHtml = rawArticles[article].find("a")
         title = articleHtml['title']
         link = articleHtml['href']
-        imgSrc = articleHtml.contents[0]['src'].replace("-218x150", "") #assuming that all thumnails are 218x150px 
+        imgSrc = articleHtml.contents[0]['src'].replace("-218x150", "") #assuming that all thumbnails are 218x150px 
         articleContent = {"title": title, "link": link, "img": imgSrc}
         articles.append(articleContent)
     return articles

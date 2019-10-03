@@ -2,3 +2,82 @@
     padding-left:0px;
     padding-right:0px;
 }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75
+    }
+
+    90% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0
+    }
+
+    75% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+.welcome-text{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    opacity: 0;
+    color: white;
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.45)   ;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    animation-name: fadeOut;
+    animation-duration: 3s;
+}
+
+#goodNewsCarousel {
+    opacity: 1;
+    /*
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    */
+}
+
+.header {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: white; 
+}
+
+.custom-carousel-caption {
+    background-color: #00000070;
+    border-radius: 10px;
+}
+
+.custom-carousel-caption h5{
+    color: white;
+}
+ /* potential background: background-color: #17d0d0;  */
