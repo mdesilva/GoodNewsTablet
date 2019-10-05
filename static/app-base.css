@@ -79,6 +79,7 @@
 .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
+    height: 100;
 }
 
  /* potential background: background-color: #17d0d0;  */
