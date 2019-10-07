@@ -22,7 +22,7 @@ def parseArticles():
 def getArticlesJSON():
     return jsonify(parseArticles())
 
-@app.route("/articles", methods=["GET"])
+@app.route("/", methods=["GET"])
 def getArticles():
     articles = parseArticles()
     return render_template('index.html', articles=articles)
