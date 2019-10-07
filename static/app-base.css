@@ -78,4 +78,25 @@
     color: white;
 }
 
+.ifMobile {
+    display:none;
+    top: 25vh;
+    position: absolute;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px){
+    .content {
+        display:none;
+    }
+
+    .ifMobile {
+        display:block;
+    }
+
+    .welcome-text{
+        display: none;
+    }
+}
+
  /* potential background: background-color: #17d0d0;  */
