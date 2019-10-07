@@ -38,7 +38,7 @@
 
 .welcome-text{
     position: absolute;
-    left: 25%;
+    left: 33%;
     top: 50%;
     opacity: 0;
     color: white;
@@ -47,7 +47,7 @@
     padding: 1.5rem 1rem;
     border-radius: 10px;
     animation-name: fadeOut;
-    animation-duration: 6s;
+    animation-duration: 4s;
     font-family: 'Kreon', sans-serif;
 }
 
@@ -70,6 +70,8 @@
 .custom-carousel-caption {
     background-color: #00000070;
     border-radius: 10px;
+    top: 75%;
+    height: fit-content;    
 }
 
 .custom-carousel-caption h5{
